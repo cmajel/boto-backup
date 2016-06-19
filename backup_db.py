@@ -78,4 +78,3 @@ def delete_local_files(filename):
   print "local file deleted"
 
 get_db_dump()
-

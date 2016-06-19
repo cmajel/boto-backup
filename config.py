@@ -1,7 +1,7 @@
 
 # Naming -----------------------------------------------------------------
 #   Your file names will be `filename_prefix-daily-YYYYMMDD` for daily 
-#   backups and `filename_prefix-hourly-YYYYMMDD-HH` for hourly backups
+#   backups and `filename_prefix-hourly-HH` for hourly backups
 
 filename_prefix = "" 
 
