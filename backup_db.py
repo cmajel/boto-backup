@@ -19,6 +19,7 @@ def get_filename():
   date = str(now.year) + str(now.month).zfill(2) + str(now.day).zfill(2)
   hour = str(now.hour).zfill(2)
   minute = str(now.minute).zfill(2)
+  second = str(now.second).zfill(2)
 
   # listen for type
   parser = argparse.ArgumentParser()
@@ -33,16 +34,19 @@ def get_filename():
 
   # name the file
   filename = None
-  filename_starter = filename_prefix + '-' + str(backup_type)
+  filename_starter = filename_prefix + '-'
 
   if backup_type == 'hourly':
-    filename = filename_starter + '-' + hour + '.sql'
+    filename = filename_starter + str(backup_type) + '-' + hour + '.sql'
 
   if backup_type == 'minute15':
-    filename = filename_prefix + '-' + minute + '.sql'
+    filename = filename_prefix + str(backup_type) + '-' + minute + '.sql'
 
   if backup_type == 'daily':
-    filname = filename_starter + '-' + date + '.sql'
+    filname = filename_starter + str(backup_type) + '-' + date + '.sql'
+
+  if backup_type == None:
+    filename = filename_starter + date + '-'  + hour + ':'  + minute + ':' + second + '.sql'
   
   return os.path.join('backups', filename)
 
