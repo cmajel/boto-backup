@@ -4,4 +4,4 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
 
 0 * * * * cd ~/path/to/boto-backup && source yourenv/bin/activate && python backup_db.py --type=hourly  && echo "hour complete"
 
-0 2 * * * cd ~/path/to/boto-backup && source yourenv/bin/activate && python backup_db.py --type=daily  && echo "daily complete"
+0 23 * * * cd ~/path/to/boto-backup && source yourenv/bin/activate && python backup_db.py --type=daily  && echo "daily complete"
