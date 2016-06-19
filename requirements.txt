@@ -1,0 +1,4 @@
+boto==2.40.0
+DateTime==4.1.1
+pytz==2016.4
+zope.interface==4.2.0
