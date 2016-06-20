@@ -8,7 +8,7 @@ It is a simple script that connects to a remote database, runs a database dump, 
 
 For my projects, I use this so that their is a unique daily file for each day, while the 15min and hourly files only include the data from the most recent run through.
 
-## How do I use it?
+## How do you use it?
 
 * Clone the repo   
   * `git clone https://github.com/cmajel/boto-backup.git`
