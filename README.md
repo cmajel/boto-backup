@@ -29,5 +29,6 @@ For my projects, I use this so that their is a unique daily file for each day, w
   
 * If all looks good, try setting it up to run at an interval with cron. [There is a sample cronjob here](https://github.com/cmajel/boto-backup/blob/master/sample_crontab.txt)
 
-
+## Why did I do it this way?
+Well my friend, the answer is simple. It works for what I need it to do and did what I was looking for. I'm a self taught designer exploring the dark arts of full stack development in my free time, and am by no means an expert when it comes to database maintenance.
 
