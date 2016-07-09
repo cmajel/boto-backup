@@ -3,7 +3,9 @@
 #   Your file names will be `filename_prefix-daily-YYYYMMDD` for daily 
 #   backups and `filename_prefix-hourly-HH` for hourly backups
 
-filename_prefix = "" 
+filename_prefix = '' 
+directory_name_for_temp_backups = ''
+directory_name_for_archive_backups = ''
 
 ## Database --------------------------------------------------------------
 

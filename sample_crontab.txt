@@ -1,4 +1,5 @@
-PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 0,15,30,45 * * * * cd ~/path/to/boto-backup && source yourenv/bin/activate &&  python backup_db.py --type=minute15  && echo "minute 15 complete"
 
