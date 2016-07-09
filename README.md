@@ -23,7 +23,11 @@ For my projects, I use this so that their is a unique daily file for each day, w
   * a prefix for your filenames
   * Your psql credentials. Make sure your have dump privilages set up. If you haven't already done so, set up a `.pgpass` file so you are not prompted for your password. [Learn more about .pgpass here](https://www.postgresql.org/docs/9.3/static/libpq-pgpass.html)
   * Your AWS credentials and which bucket you would like to store them in
-  
+
+* Set up logs/mail if you need it
+  * If you are running this locally, your OS probably has a mail program installed which will store crontab output and help debug any problems.
+  * If you are setting up a remote server, you may have to set up a mail client. I used Postfix on an Ubuntu server for mine. [Learn more about Postfix + Ubuntu here](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)  
+
 * Give it a test drive
   * `python backup_db.py`
   
